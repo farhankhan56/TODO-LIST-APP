@@ -22,29 +22,29 @@
 
 // ACTIVITY
 
-// let btn = document.querySelector("button");
-// let uls = document.querySelector("ul");
-// let inp = document.querySelector("input");
+let btn = document.querySelector("button");
+let uls = document.querySelector("ul");
+let inp = document.querySelector("input");
 
-// btn.addEventListener("click",function(){
-//     let item= document.createElement("li");
-//     item.innerText = inp.value;
+btn.addEventListener("click",function(){
+    let item= document.createElement("li");
+    item.innerText = inp.value;
 
-//     let delBtn = document.createElement("button");
-//     delBtn.innerText = "delete";
-//     delBtn.classList.add("delete");
-//     item.appendChild(delBtn);
+    let delBtn = document.createElement("button");
+    delBtn.innerText = "delete";
+    delBtn.classList.add("delete");
+    item.appendChild(delBtn);
 
-//     uls.appendChild(item);
-//     inp.value="";
-// });
-//    uls.addEventListener("click",function(event){
-//     if(event.target.nodeName == "BUTTON"){
-//         let listItem = event.target.parentElement;
-//         listItem.remove();
-//         console.log("deleted");
-//     }
-//    });
+    uls.appendChild(item);
+    inp.value="";
+});
+   uls.addEventListener("click",function(event){
+    if(event.target.nodeName == "BUTTON"){
+        let listItem = event.target.parentElement;
+        listItem.remove();
+        console.log("deleted");
+    }
+   });
 // let delBtns = document.querySelectorAll(".delete");
 // for(delBtn of delBtns){
 //     delBtn.addEventListener("click", function(){
@@ -81,6 +81,7 @@
 //     }
 //    });
  
+
 
 
 
